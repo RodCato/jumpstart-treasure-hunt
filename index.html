@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>CRod and Jay's Incredible Treasure Hunt Game</title>
+	<link rel="icon" type="image/png" href="https://clipartix.com/wp-content/uploads/2016/07/Treasure-chest-clipart-free-clipart-images-5.png">
+	<link rel="stylesheet" href="treasurehunt.css">
+</head>
+
+<body>
+
+    <h1>Treasure Hunt</h1>
+    <h2> Try your luck!</h2>
+<div id="rules">
+	<ul>
+		<li>Click the boxes to reveal whats on the map</li>
+		<li>If you click on the bomb, you lose </li>
+		<li>If you click on the treasure, you win </li>
+	</ul>
+</div>
+
+<div id="chest">
+	<img src="https://publicdomainvectors.org/photos/1298510091.png" width="300px"/>
+</div>
+
+<table>
+	<tr>
+		<td id="0" onclick="treasure(0)" class="qmark"><img src="https://letsdraw.it/drawing/4t5hf98dx.svg"/> </td>
+		<td id="1" onclick="treasure(1)" class="qmark"><img src="https://letsdraw.it/drawing/4t5hf98dx.svg"/></td>
+		<td id="2" onclick="treasure(2)" class="qmark"><img src="https://letsdraw.it/drawing/4t5hf98dx.svg"/></td>
+
+	</tr>
+	<tr>
+		<td id="3" onclick="treasure(3)" class="qmark"><img src="https://letsdraw.it/drawing/4t5hf98dx.svg"/></td>
+		<td id="4" onclick="treasure(4)" class="qmark"><img src="https://letsdraw.it/drawing/4t5hf98dx.svg"/></td>
+		<td id="5" onclick="treasure(5)" class="qmark"><img src="https://letsdraw.it/drawing/4t5hf98dx.svg"/></td>
+	
+	</tr>
+	<tr>
+		<td id="6" onclick="treasure(6)" class="qmark"><img src="https://letsdraw.it/drawing/4t5hf98dx.svg"></td>
+		<td id="7" onclick="treasure(7)" class="qmark"><img src="https://letsdraw.it/drawing/4t5hf98dx.svg"/></td>
+		<td id="8" onclick="treasure(8)" class="qmark"><img src="https://letsdraw.it/drawing/4t5hf98dx.svg"/></td>
+		
+	</tr>
+
+</table>
+
+<button type="button" onclick="location.reload()">Restart the Game</button>
+
+<footer>&copy; Crod and J</footer>
+
+<script type="text/javascript" src="treasurehunt.js"></script>
+
+</body>
+
+
+</html>

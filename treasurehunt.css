@@ -1,0 +1,110 @@
+body{
+    background-image: url(https://live.staticflickr.com/7257/6995467201_0e47f2ab2c_c.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    text-align: center;
+    background-blend-mode: lighten;
+
+}
+table {
+    background: url(https://openclipart.org/image/800px/301681) no-repeat; 
+    width: 500px;
+    border: 7px solid black;
+    border-radius: 5%;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+    position: center;
+    padding: 40px 40px 40px 40px;
+    margin-left: auto;  
+    margin-right: auto; 
+    overflow: hidden; 
+    font-size: 290%;
+    display: flex;
+}
+td{
+    display: flexbox;
+    border: 7px solid black;
+    border-radius: 5%;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+    position: center;
+    padding: 40px 40px 40px 40px;
+    margin-left: auto;  
+    margin-right: auto; 
+    overflow: hidden; 
+}
+h1 {
+    font-size: 70px;
+}
+h2 { 
+    font-size: 50px;
+}
+p {
+    font-size: 35px;
+    text-decoration: underline;
+    background-color: goldenrod;
+    color: blue;
+}
+button {
+    outline-color: aquamarine;
+    background-color: red;
+    width: 180px;
+    height: 100px;
+    font-size:larger;
+    border-radius: 5%;
+    border: 7px solid black;
+    padding: 20px 20px 20px 20px;
+    }
+button:hover {
+        background-color: green;
+}
+img {
+    height:50px;
+    width: 50px;
+    overflow: hidden;
+}
+.qmark:hover{
+    background-color: blue;
+}
+#chest{
+    animation: chestAnimation 3s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out; 
+}
+
+#rules{
+    display:flex;
+    justify-content: center;
+    text-align: left;
+    background-color: gold;
+    width:350px;
+}
+
+@keyframes chestAnimation {
+    0% {
+        transform: scaleX(0.5);
+        opacity: 0;
+      }
+    
+      60% {
+        transform: scaleX(1);
+        opacity: 0;
+      }
+    
+      100% {
+        transform: scaleX(0.8);
+      }
+    }
+div{
+    display: inline-flexbox;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+#wrapper {
+    display: block;
+}
