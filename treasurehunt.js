@@ -9,13 +9,13 @@ const treasure = (location) => {
     document.getElementById(location).innerHTML = "💰";
     showModal("You Win!");
     setTimeout(() => {
-      window.location.href = "https://eliment.github.io/rod.github.io/";
+      window.location.href = "https://rodcato.github.io/jumpstart-treasure-hunt/";
     }, 2000); // Delay in milliseconds (e.g., 2000ms = 2 seconds)
   } else if (bombLocation === location) {
     document.getElementById(location).innerHTML = "🔥";
     showModal("You Lose!");
     setTimeout(() => {
-      window.location.href = "https://eliment.github.io/rod.github.io/";
+      window.location.href = "https://rodcato.github.io/jumpstart-treasure-hunt/";
     }, 2000); // Delay in milliseconds (e.g., 2000ms = 2 seconds)
   } else {
     document.getElementById(location).innerHTML = "🚫";
