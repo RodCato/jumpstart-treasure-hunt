@@ -1,31 +1,17 @@
 body{
-    background-image: url(https://live.staticflickr.com/7257/6995467201_0e47f2ab2c_c.jpg);
+    background-image: url(Worldmap.png);
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     text-align: center;
     background-blend-mode: lighten;
+    font-family: "PT Serif", sans-serif;
 
 }
-table {
-    background: url(https://openclipart.org/image/800px/301681) no-repeat; 
-    width: 500px;
-    border: 7px solid black;
-    border-radius: 5%;
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    text-align: center;
-    position: center;
-    padding: 40px 40px 40px 40px;
-    margin-left: auto;  
-    margin-right: auto; 
-    overflow: hidden; 
-    font-size: 290%;
-    display: flex;
-}
+
 td{
     display: flexbox;
-    border: 7px solid black;
+    border: 3px solid black;
     border-radius: 5%;
     background-size: cover;
     background-position: center;
@@ -36,6 +22,7 @@ td{
     margin-left: auto;  
     margin-right: auto; 
     overflow: hidden; 
+    cursor: pointer;
 }
 h1 {
     font-size: 70px;
@@ -43,12 +30,13 @@ h1 {
 h2 { 
     font-size: 50px;
 }
-p {
+/* p {
     font-size: 35px;
     text-decoration: underline;
     background-color: goldenrod;
     color: blue;
-}
+    border-radius: 1px;
+} */
 button {
     outline-color: aquamarine;
     background-color: red;
@@ -58,9 +46,10 @@ button {
     border-radius: 5%;
     border: 7px solid black;
     padding: 20px 20px 20px 20px;
+    cursor: pointer;
     }
 button:hover {
-        background-color: green;
+        background-color: rgb(208, 20, 20);
 }
 img {
     height:50px;
@@ -68,7 +57,8 @@ img {
     overflow: hidden;
 }
 .qmark:hover{
-    background-color: blue;
+    background-color: rgb(126, 126, 130);
+    opacity: 80%;
 }
 #chest{
     animation: chestAnimation 3s infinite;
@@ -79,9 +69,10 @@ img {
 #rules{
     display:flex;
     justify-content: center;
-    text-align: left;
-    background-color: gold;
-    width:350px;
+    text-align: center;
+    background-color: rgb(236, 223, 150);
+    width:400px;
+    margin: auto;
 }
 
 @keyframes chestAnimation {
@@ -108,3 +99,37 @@ div{
 #wrapper {
     display: block;
 }
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+
+  
+  #game-board {
+    /* background-image: url(treasuremap.png); */
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    border: 7px solid black;
+    border-radius: 5%;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 290%;
+    display: flex;
+  }
+  
+  

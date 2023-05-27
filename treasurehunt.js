@@ -1,30 +1,32 @@
+const modal = document.getElementById("modal");
+const modalMessage = document.getElementById("modal-message");
 
-const treasure = (location)=> { 
-    var treasureLocation = Math.floor(Math.random() * 8) 
-    var bombLocation = Math.floor(Math.random() * 8) 
-     
-     if(treasureLocation === location){
-        document.getElementById(location).innerHTML = "💰"
-        alert ("You Win!")  // experimental auto reload of game after a win next line
-      window.location = 'https://eliment.github.io/rod.github.io/';
+const treasure = (location) => {
+  let treasureLocation = Math.floor(Math.random() * 9);
+  let bombLocation = Math.floor(Math.random() * 9);
 
-     
-     } 
-     else if (bombLocation === location){
-        document.getElementById(location).innerHTML = "🔥" 
-        setTimeout(() => {
-         alert("Replay?")
-      }, 1000)
+  if (treasureLocation === location) {
+    document.getElementById(location).innerHTML = "💰";
+    showModal("You Win!");
+    setTimeout(() => {
+      window.location.href = "https://eliment.github.io/rod.github.io/";
+    }, 2000); // Delay in milliseconds (e.g., 2000ms = 2 seconds)
+  } else if (bombLocation === location) {
+    document.getElementById(location).innerHTML = "🔥";
+    showModal("You Lose!");
+    setTimeout(() => {
+      window.location.href = "https://eliment.github.io/rod.github.io/";
+    }, 2000); // Delay in milliseconds (e.g., 2000ms = 2 seconds)
+  } else {
+    document.getElementById(location).innerHTML = "🚫";
+  }
+};
 
-        
-       alert("You lose!")  //testing reload function after losing on next line
-        window.location = 'https://eliment.github.io/rod.github.io/';
+function showModal(message) {
+  modalMessage.textContent = message;
+  modal.showModal();
 }
-     else {
-        document.getElementById(location).innerHTML = "🙈" 
-     }
 
-   }
- //setTimeout(() => {
-  // console.log("Delayed for 1 second.");
- //}, 1000)
+modal.addEventListener("close", function () {
+  window.location.reload();
+});
