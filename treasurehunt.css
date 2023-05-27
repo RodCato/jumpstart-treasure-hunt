@@ -9,61 +9,12 @@ body{
 
 }
 
-td{
-    display: flexbox;
-    border: 3px solid black;
-    border-radius: 5%;
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    text-align: center;
-    position: center;
-    padding: 40px 40px 40px 40px;
-    margin-left: auto;  
-    margin-right: auto; 
-    overflow: hidden; 
-    cursor: pointer;
-}
 h1 {
     font-size: 70px;
 }
+
 h2 { 
     font-size: 50px;
-}
-/* p {
-    font-size: 35px;
-    text-decoration: underline;
-    background-color: goldenrod;
-    color: blue;
-    border-radius: 1px;
-} */
-button {
-    outline-color: aquamarine;
-    background-color: red;
-    width: 180px;
-    height: 100px;
-    font-size:larger;
-    border-radius: 5%;
-    border: 7px solid black;
-    padding: 20px 20px 20px 20px;
-    cursor: pointer;
-    }
-button:hover {
-        background-color: rgb(208, 20, 20);
-}
-img {
-    height:50px;
-    width: 50px;
-    overflow: hidden;
-}
-.qmark:hover{
-    background-color: rgb(126, 126, 130);
-    opacity: 80%;
-}
-#chest{
-    animation: chestAnimation 3s infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out; 
 }
 
 #rules{
@@ -75,21 +26,40 @@ img {
     margin: auto;
 }
 
-@keyframes chestAnimation {
-    0% {
-        transform: scaleX(0.5);
-        opacity: 0;
-      }
-    
-      60% {
-        transform: scaleX(1);
-        opacity: 0;
-      }
-    
-      100% {
-        transform: scaleX(0.8);
-      }
+img {
+    height:50px;
+    width: 50px;
+    overflow: hidden;
+}
+/* p {
+    font-size: 35px;
+    text-decoration: underline;
+    background-color: goldenrod;
+    color: blue;
+    border-radius: 1px;
+} */
+
+button {
+    outline-color: aquamarine;
+    background-color: red;
+    width: 180px;
+    height: 100px;
+    font-size:larger;
+    border-radius: 5%;
+    border: 7px solid black;
+    padding: 20px 20px 20px 20px;
+    cursor: pointer;
     }
+
+button:hover {
+        background-color: rgb(208, 20, 20);
+}
+
+.qmark:hover{
+    background-color: rgb(126, 126, 130);
+    opacity: 80%;
+}
+
 div{
     display: inline-flexbox;
     margin-left: auto;
@@ -106,30 +76,65 @@ div{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: center;
     z-index: 9999;
   }
-  
 
-  
   #game-board {
     /* background-image: url(treasuremap.png); */
-    background-repeat: no-repeat;
-    width: 500px;
-    height: 500px;
-    border: 7px solid black;
+    display: flex;
+    /* background-repeat: no-repeat; */
+    width: 490px;
+    height: 490px;
+    /* border: 2px solid black; */
     border-radius: 5%;
-    background-size: cover;
+    /* background-size: cover; */
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     overflow: hidden;
     font-size: 290%;
-    display: flex;
+    
   }
   
-  
+  td{
+    display: flexbox;
+    border: 3px solid black;
+    border-radius: 5%;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+    /* position: center; */
+    padding: 45px;
+    margin-left: auto;  
+    margin-right: auto; 
+    overflow: hidden; 
+    cursor: pointer;
+}
+
+/* #chest{
+    animation: chestAnimation 3s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out; 
+} */
+
+/* @keyframes chestAnimation {
+    0% {
+        transform: scaleX(0.5);
+        opacity: 0;
+      }
+    
+      60% {
+        transform: scaleX(1);
+        opacity: 0;
+      }
+    
+      100% {
+        transform: scaleX(0.8);
+      }
+    } */
