@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="A Javascript loot game">
     <title>Find the loot</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT%20Serif">
     <link rel="icon" type="image/png" href="favicon.png">
@@ -13,35 +13,37 @@
 
 <body>
     <h1>Find the Loot</h1>
-    <h2>Or Explode Trying!</h2>
     <div id="rules">
         
-            <p><h3>Click the <img src="questionmark.svg"/> to reveal what's in the squares. You only win if you reveal the <img src="treasurechest.png" alt="Treasure" />.  <br />If you see 😵, you lose.</h3></p>
+            <p><h3>Reveal the <img src="treasurechest.png" alt="Treasure" /> to win</h3></p>
         
     </div>
 
     <div id="chest">
         <!-- <img src="treasurechest.png" width="300px"/> -->
     </div>
-	<p>Wins: <span id="wins">0</span></p>
-    <p>Losses: <span id="losses">0</span></p>
-	<button id="resetButton">Reset Score</button>
+	
     <div id="game-board">
         <table>
             <tr>
-                <td id="0" onclick="treasure(0)" class="qmark"><img src="questionmark.svg"/> </td>
-                <td id="1" onclick="treasure(1)" class="qmark"><img src="questionmark.svg"/></td>
-                <td id="2" onclick="treasure(2)" class="qmark"><img src="questionmark.svg"/></td>
+                <td><p id="tablewords">Wins<br><span id="wins"> 0</span></p></td>
+                <td type="button" onclick="location.reload()"><p id="tablewords2">Restart <br>the Game</p></Restart></td>
+                <td><p id="tablewords">Losses <br><span id="losses">0</span></p></td>
             </tr>
             <tr>
-                <td id="3" onclick="treasure(3)" class="qmark"><img src="questionmark.svg"/></td>
-                <td id="4" onclick="treasure(4)" class="qmark"><img src="questionmark.svg"/></td>
-                <td id="5" onclick="treasure(5)" class="qmark"><img src="questionmark.svg"/></td>
+                <td id="0" onclick="treasure(0)" class="qmark"><img src="questionmark.svg" alt="question mark"/> </td>
+                <td id="1" onclick="treasure(1)" class="qmark"><img src="questionmark.svg" alt="question mark"/></td>
+                <td id="2" onclick="treasure(2)" class="qmark"><img src="questionmark.svg" alt="question mark"/></td>
             </tr>
             <tr>
-                <td id="6" onclick="treasure(6)" class="qmark"><img src="questionmark.svg"></td>
-                <td id="7" onclick="treasure(7)" class="qmark"><img src="questionmark.svg"/></td>
-                <td id="8" onclick="treasure(8)" class="qmark"><img src="questionmark.svg"/></td>
+                <td id="3" onclick="treasure(3)" class="qmark"><img src="questionmark.svg" alt="question mark"/></td>
+                <td id="4" onclick="treasure(4)" class="qmark"><img src="questionmark.svg" alt="question mark"/></td>
+                <td id="5" onclick="treasure(5)" class="qmark"><img src="questionmark.svg" alt="question mark"/></td>
+            </tr>
+            <tr>
+                <td id="6" onclick="treasure(6)" class="qmark"><img src="questionmark.svg" alt="question mark"></td>
+                <td id="7" onclick="treasure(7)" class="qmark"><img src="questionmark.svg" alt="question mark"/></td>
+                <td id="8" onclick="treasure(8)" class="qmark"><img src="questionmark.svg" alt="question mark"/></td>
             </tr>
         </table>
     </div>
@@ -52,9 +54,9 @@
         </div>
     </dialog>
 
-    <button type="button" onclick="location.reload()">Restart the Game</button>
+    <button id="resetButton">Reset Score</button>
 
-    <footer>&copy; Crod</footer>
+    <footer>&copy; CRod | <a href="https://github.com/RodCato">My Github Page</a></footer>
 
     <script type="text/javascript" src="treasurehunt.js"></script>
 
