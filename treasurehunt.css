@@ -10,7 +10,7 @@ body{
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 60px;
 }
 
 h2 { 
@@ -40,14 +40,14 @@ img {
 } */
 
 button {
-    outline-color: rgb(3, 4, 4);
+    /* outline-color: rgb(3, 4, 4); */
     background-color: red;
-    width: 150px;
-    height: 70px;
+    width: 100px;
+    height: 50px;
     font-size: medium;
     border-radius: 5%;
     border: 3px solid black;
-    padding: 20px 20px 20px 20px;
+    padding: 5px;
     cursor: pointer;
     justify-content: center;
     }
@@ -88,8 +88,8 @@ div{
     /* background-image: url(treasuremap.png); */
     display: flex;
     /* background-repeat: no-repeat; */
-    width: 490px;
-    height: 490px;
+    width: 600px;
+    height: 650px;
     /* border: 2px solid black; */
     border-radius: 5%;
     /* background-size: cover; */
@@ -111,13 +111,30 @@ div{
     justify-content: center;
     text-align: center;
     /* position: center; */
-    padding: 45px;
+    padding: 40px;
     margin-left: auto;  
     margin-right: auto; 
     overflow: hidden; 
     cursor: pointer;
 }
 
+#wins, #losses {
+    display: inline-block;
+    font-size: 150%;
+}
+
+#tablewords {
+    font-size: 30%;
+    text-decoration: underline;
+}
+#tablewords2 {
+    font-size: 30%;
+    text-decoration: underline;
+}
+#tablewords2:hover{
+    background-color: rgb(232, 229, 63);
+    opacity: 80%;
+}
 /* #chest{
     animation: chestAnimation 3s infinite;
     animation-direction: alternate;

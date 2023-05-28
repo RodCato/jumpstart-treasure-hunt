@@ -26,6 +26,7 @@ const treasure = (location) => {
   const treasureLocation = Math.floor(Math.random() * 9)
   const bombLocation = Math.floor(Math.random() * 9)
   const noState = ["☠️", "💩", "👎🏿", "👀", "🦨", "🪨", "🌋", "💔", "🏴‍☠️"]
+  const rand = noState[(Math.random() * noState.length) |0]
 
   if (treasureLocation === location) {
     document.getElementById(location).innerHTML = '<img src="treasurechest.png" alt="Treasure" />'
@@ -46,7 +47,7 @@ const treasure = (location) => {
       window.location.reload()
     }, 2000) // Delay in milliseconds (e.g., 2000ms = 2 seconds)
   } else {
-    document.getElementById(location).innerHTML = noState[location]
+    document.getElementById(location).innerHTML = rand
   }
 }
 
