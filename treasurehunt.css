@@ -120,15 +120,15 @@ div{
 
 #wins, #losses {
     display: inline-block;
-    font-size: 150%;
+    font-size: medium;
 }
 
 #tablewords {
-    font-size: 30%;
+    font-size: medium;
     text-decoration: underline;
 }
 #tablewords2 {
-    font-size: 30%;
+    font-size: medium;
     text-decoration: underline;
 }
 #tablewords2:hover{
